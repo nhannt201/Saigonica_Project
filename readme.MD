@@ -5,6 +5,5 @@
 ## Author:  
 - @bkk0711  
 - @nhannt201  
-## STATUS:  RESEARCHING...
-------  
+## STATUS:  RESEARCHING...  
 WE ALSO RESEARCH THIS PROJECT. COMING SOON!
