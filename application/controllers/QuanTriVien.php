@@ -20,6 +20,6 @@ class QuanTriVien extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('quantrivien_control');
+		$this->load->view('Admin');
 	}
 }

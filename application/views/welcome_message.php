@@ -71,13 +71,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Chào mừng bạn đến với Saigonica!</h1>
 
 	<div id="body">
-		<p>Trang cho <a href="/index.php/QuanTriVien">Quản Trị Viên.</a></p>
+		<p>Menu: <a href="/index.php/QuanTriVien">Quản Trị Viên</a> | <a href="/index.php/Trangchu">Trang chủ</a></p>
 <hr/>
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+		<p>Mặc định truy cập welcome trong thư mục views.</p>
+		<code>application/views/</code>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<p>Bạn cần tạo file để khai báo tên trang truy cập</p>
+		<code>application/controllers/</code>
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
