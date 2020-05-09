@@ -1,20 +1,39 @@
-
+<html>
+<head>
+<title>Saigonica - Nền tảng Blog nhanh!</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+</head>
+<body>
 <article class="container">
 <header class="jumbotron text-center">
-<h2>BLog Micro</h2>
-<p class="text-warning">Share All Reactions</p>
+<h2>Saigonica - Nền tảng Blog nhanh!</h2>
+<p class="text-warning">Chia sẻ mọi cảm xúc của bạn!</p>
 </header>
+
 <div class="row">
 <div class="col-md-9">
+<!--Nam vao vung can le trai-->
+<div class="panel panel-default">
+<div class="panel-body">
+
+<form><!--Form post trang thai-->
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Bạn đang cảm thấy gì?</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tôi cảm thấy..." rows="3"></textarea>
+	  </div>
+	   <div class="text-right">
+	 <button type="submit" class="btn btn-default">Cập nhật</button>
+	   </div>
+	    </div>
+		 </div>
+</form>
 <div class="panel panel-default">
 <div class="list-group-item">
-<p><b><a>Lee Nann Anh</a></b> <span class="pull-right">1. 5. 2020</span></p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque minima ab? Id provident aperiam atque excepturi repudiandae quis eveniet expedita dolores esse doloremque quasi sed magnam commodi sit modi!
-<br /><button class="btn btn-xs btn-default"><b>Like</b> 500</button>
+<p><b><a>Hoa Thiên Cốt</a></b> <span class="pull-right">10. 5. 2020</span></p>
+Hôm nay trời nóng quá!!! Tôi mới làm ly đá bào ăn cho bỏ nóng này!
+<br /><button class="btn btn-xs btn-default"><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>
 </div>
 <div class="list-group-item">
 <p><b><a>Lee Nann Anh</a></b> <span class="pull-right">1. 5. 2020</span></p>
@@ -122,3 +141,5 @@ Xin chao : <b>Lee Nann Anh</b>
 </div>
 </div>
 </article>
+</body>
+</html>
