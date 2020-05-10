@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Admin - Saigonica</title>
+	<title>Profile - Saigonica</title>
 
 	<style type="text/css">
 
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Chào mừng bạn đến với Saigonica!</h1>
 
 	<div id="body">
-		<p>Đây là trang Quản Trị Viên.</p>
+		<p>Đây là trang cá nhân.</p>
 
 	
 	</div>

@@ -82,7 +82,7 @@
 
       <ul class="nav navbar-nav navbar-right">
 
-        <li><a href="#">Xin chao : Lee Nann Anh</a></li>
+        <li><a href="/profile">Xin chao : Lee Nann Anh</a></li>
 
         <li class="dropdown">
 
