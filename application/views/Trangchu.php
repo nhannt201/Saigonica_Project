@@ -17,14 +17,20 @@
 <!--Nam vao vung can le trai-->
 <div class="panel panel-default">
 <div class="panel-body">
-
-<form><!--Form post trang thai-->
+<?php 
+// if($checkform == TRUE){
+// 	echo 'Login Success';
+// }else{
+// echo 'Login That bai';
+// }
+?>
+<form action="form_post" method="POST"><!--Form post trang thai-->
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Bạn đang cảm thấy gì?</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tôi cảm thấy..." rows="3"></textarea>
+    <textarea class="form-control" id="posts" name = "posts" placeholder="Tôi cảm thấy..." rows="3"></textarea>
 	  </div>
 	   <div class="text-right">
-	 <button type="submit" class="btn btn-default">Cập nhật</button>
+	 <button type="submit" name ="submit" class="btn btn-default">Cập nhật</button>
 	   </div>
 	    </div>
 		 </div>
