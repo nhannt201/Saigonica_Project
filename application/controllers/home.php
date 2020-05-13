@@ -8,6 +8,12 @@ class home extends CI_Controller {
 		$this->load->view('home');		
 	}
 
+	public function post_message()
+	{
+	    $this->input->post('posts');
+	    echo $this->input->post('posts');
+	}
+
 }
 
 /* End of file home.php */
