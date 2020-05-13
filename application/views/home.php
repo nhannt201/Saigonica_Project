@@ -1,4 +1,6 @@
-<html>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><html lang="vi">
 <head>
 <title>Saigonica - Nền tảng Blog nhanh!</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -6,12 +8,13 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<article class="container">
+<?php include("_menu.php") ?>
+<!--
 <header class="jumbotron text-center">
 <h2>Saigonica - Nền tảng Blog nhanh!</h2>
 <p class="text-warning">Chia sẻ mọi cảm xúc của bạn!</p>
-</header>
-
+</header> -->
+<article class="container">
 <div class="row">
 <div class="col-md-9">
 <!--Nam vao vung can le trai-->
@@ -82,12 +85,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque min
 <div class="col-md-3">
 <div class="panel panel-default">
 <div class="list-group-item active">
-Xin chao : <b>Lee Nann Anh</b>
+Introduction
 </div>
 <div class="list-group-item">
 <h4 class="list-group-item-heading"><center>Micro BLog</center></h4>
 <p class="list-group-item-text"> Chia se nhung bai viet cua ban
 . viet nen cam xuc cau ban</p>
+</div>
+<div class="list-group-item">
+<h4 class="list-group-item-heading"><center>About me</center></h4>
+<p class="list-group-item-text">My name is XXX, I am a doctor and like write blogs</p>
 </div>
 <div class="list-group-item">
 <h4 class="list-group-item-heading"><center>Thong KE</center></h4>
