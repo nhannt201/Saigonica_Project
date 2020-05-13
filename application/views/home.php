@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // echo 'Login That bai';
 // }
 ?>
-<form action="form_post" method="POST"><!--Form post trang thai-->
+<form action="post_message" method="POST"><!--Form post trang thai-->
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Bạn đang cảm thấy gì?</label>
     <textarea class="form-control" id="posts" name = "posts" placeholder="Tôi cảm thấy..." rows="3"></textarea>

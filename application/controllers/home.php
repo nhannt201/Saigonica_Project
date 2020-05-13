@@ -10,8 +10,16 @@ class home extends CI_Controller {
 
 	public function post_message()
 	{
-	    $this->input->post('posts');
-	    echo $this->input->post('posts');
+	    $noidung = $this->input->post('posts');
+	    $this->load->model('post');
+	    
+	    if($this->post->dangbai('1',$noidung)){
+	    	$noti = 'success';
+	    
+	    }else{
+	    	$noti = 'error';
+	    }
+	    echo $noti;
 	}
 
 }
