@@ -11,9 +11,9 @@ class home extends CI_Controller {
 	public function post_message()
 	{
 	    $noidung = $this->input->post('posts');
-	    $this->load->model('post');
+	    $this->load->model('Baiviet/baiviet');
 	    
-	    if($this->post->dangbai('1',$noidung)){
+	    if($this->baiviet->them('1',$noidung)){
 	    	$noti = 'success';
 	    
 	    }else{
