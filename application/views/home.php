@@ -37,14 +37,95 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   </div>
 	    </div>
 		 </div>
-</form>
+</form> <style>
+ #avt{
+	 width: 50px;
+ }
+ #name_post {
+	 font-size: 11px;
+ }
+ </style>
 <div class="panel panel-default">
+
+<!--Bat dau 1 post-->
 <div class="list-group-item">
-<p><b><a>Hoa Thiên Cốt</a></b> <span class="pull-right">10. 5. 2020</span></p>
-Hôm nay trời nóng quá!!! Tôi mới làm ly đá bào ăn cho bỏ nóng này!
-<br /><button class="btn btn-xs btn-default"><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>
+<div class="row">
+<!--Cot trai-->
+<div class="col-md-2">
+		<div class="text-center">
+          <img src="https://i.imgur.com/ntrJCDc.jpg" id="avt" alt="...">	  
+		   <ul class="pager">	
+				<li><a id="name_post">Hoa Thiên Cốt</a></li>
+			</ul>
+		  </div>
 </div>
+<!--Cot phai-->
+<div class="col-md-9">
+<!--Panell-->
+<div class="panel panel-default">
+
+  <div class="panel-heading">Cập nhật lúc 12h00 - 1. 5. 2020</div>
+
+  <div class="panel-body">
+
+  Hôm nay trời nóng quá!!! Tôi mới làm ly đá bào ăn cho bỏ nóng này!
+
+  </div>
+
+</div>
+<!--Endpanêl-->
+<!--<button class="btn btn-xs btn-default "><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>-->
+<!--Like-->
+   <div class="text-right">
+	 <button type="submit" name ="submit" class="btn btn-default">Thích</button>
+	 <button type="submit" name ="submit" class="btn btn-default">Xem sau</button>
+	 <button type="submit" name ="submit" class="btn btn-default">Theo dõi</button>
+	   </div>
+			<!--Endlike-->
+</div>
+</div>
+</div>
+<!--End mot post-->
+<!--Bat dau 1 post-->
 <div class="list-group-item">
+<div class="row">
+<!--Cot trai-->
+<div class="col-md-2">
+		<div class="text-center">
+          <img src="https://i.imgur.com/ntrJCDc.jpg" id="avt" alt="...">	  
+		   <ul class="pager">	
+				<li><a id="name_post">Sen</a></li>
+			</ul>
+		  </div>
+</div>
+<!--Cot phai-->
+<div class="col-md-9">
+<!--Panell-->
+<div class="panel panel-default">
+
+  <div class="panel-heading">Cập nhật lúc 24h00 - 15. 5. 2020</div>
+
+  <div class="panel-body">
+
+  Bánh giò nóng hỏi đây, ai ăn hom!!!
+
+  </div>
+
+</div>
+<!--Endpanêl-->
+<!--<button class="btn btn-xs btn-default "><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>-->
+<!--Like-->
+   <div class="text-right">
+	 <button type="submit" name ="submit" class="btn btn-default">Thích</button>
+	 <button type="submit" name ="submit" class="btn btn-default">Xem sau</button>
+	 <button type="submit" name ="submit" class="btn btn-default">Theo dõi</button>
+	   </div>
+			<!--Endlike-->
+</div>
+</div>
+</div>
+<!--End mot post-->
+<!--<div class="list-group-item">
 <p><b><a>Lee Nann Anh</a></b> <span class="pull-right">1. 5. 2020</span></p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque minima ab? Id provident aperiam atque excepturi repudiandae quis eveniet expedita dolores esse doloremque quasi sed magnam commodi sit modi!
 <br /><button class="btn btn-xs btn-default"><b>Like</b> 500</button>
@@ -73,7 +154,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque min
 <p><b><a>Lee Nann Anh</a></b> <span class="pull-right">1. 5. 2020</span></p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque minima ab? Id provident aperiam atque excepturi repudiandae quis eveniet expedita dolores esse doloremque quasi sed magnam commodi sit modi!
 <br /><button class="btn btn-xs btn-default"><b>Like</b> 500</button>
-</div>
+</div>-->
 <div class="list-group-item">
 <ul class="pager">
 <li class="previous"><a href="#">&larr; Older</a></li>
