@@ -16,7 +16,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  </style>
 </head>
 <body>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/application/views/include/head_menu.php") ?>
+	<?php require($_SERVER["DOCUMENT_ROOT"]."/Saigonica/application/views/include/head_menu.php") ?>
+
 <!--
 <header class="jumbotron text-center">
 <h2>Saigonica - Nền tảng Blog nhanh!</h2>
@@ -86,7 +87,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 <!--End mot post-->
-<!--Bat dau 1 post-->
+
+<?php
+foreach ($post as $value) {
+   ?>
+   <!--Bat dau 1 post-->
 <div class="list-group-item">
 <div class="row">
 <!--Cot trai-->
@@ -107,7 +112,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <div class="panel-body">
 
-  Bánh giò nóng hỏi đây, ai ăn hom!!!
+  <?=$value['noidung']?>
 
   </div>
 
@@ -124,6 +129,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 <!--End mot post-->
+   <?php
+}
+
+?>
 <!--<div class="list-group-item">
 <p><b><a>Lee Nann Anh</a></b> <span class="pull-right">1. 5. 2020</span></p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloremque minima ab? Id provident aperiam atque excepturi repudiandae quis eveniet expedita dolores esse doloremque quasi sed magnam commodi sit modi!
