@@ -77,8 +77,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--<button class="btn btn-xs btn-default "><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>-->
 <!--Like-->
    <div class="text-right">
-	 <button type="submit" name ="submit" class="btn btn-default">Buzz !!</button>
-	 <button type="submit" name ="submit" class="btn btn-default">Bình Luận</button>
+	 <button type="submit" name ="submit" class="btn btn-default btn-sm">Buzz !!</button>
+	 <button type="submit" name ="submit" class="btn btn-default btn-sm">Bình Luận</button>
 	   </div>
 			<!--Endlike-->
 </div>
@@ -115,8 +115,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--<button class="btn btn-xs btn-default "><b>Thích</b> 500</button><button class="btn btn-xs btn-default"><b>Tim</b> 1000</button>-->
 <!--Like-->
    <div class="text-right">
-	 <button type="submit" name ="submit" class="btn btn-default">Buzz !!</button>
-	 <button type="submit" name ="submit" class="btn btn-default">Bình Luận</button>
+	 <button type="submit" name ="submit" class="btn btn-default btn-sm">Buzz !!</button>
+	 <button type="submit" name ="submit" class="btn btn-default btn-sm">Bình Luận</button>
 	   </div>
 			<!--Endlike-->
 </div>
