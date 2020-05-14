@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		  </div>
 </div>
 <!--Cot phai-->
-<div class="col-md-9">
+<div class="col-md-10">
 <!--Panell-->
 <div class="panel panel-default">
 
@@ -99,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		  </div>
 </div>
 <!--Cot phai-->
-<div class="col-md-9">
+<div class="col-md-10">
 <!--Panell-->
 <div class="panel panel-default">
 
