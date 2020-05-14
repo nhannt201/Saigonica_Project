@@ -32,3 +32,5 @@ ALTER TABLE `post`
 ALTER TABLE `post`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+ALTER TABLE `post` ADD `time` INT NOT NULL AFTER `dislikes`;
