@@ -32,7 +32,7 @@
 
         <li class="active"><a href="/">Trang chủ</a></li>
 
-        <li><a href="Admin">Quản trị</a></li>
+        <li><a href="admin">Quản trị</a></li>
 
       <!--  <li class="dropdown">
 
