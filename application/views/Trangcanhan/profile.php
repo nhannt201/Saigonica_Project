@@ -8,7 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<?php include("_menu.php") ?>
+<?php require($_SERVER["DOCUMENT_ROOT"]."/application/views/include/head_menu.php") ?>
+
 
 <article class="container">
 <div class="row">

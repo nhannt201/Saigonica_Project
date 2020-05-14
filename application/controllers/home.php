@@ -5,7 +5,12 @@ class home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('Trangchu/home');		
+			
+		$this->load->model('Baiviet/baiviet');
+		$data = $this->baiviet->get(10);
+		$data = array('post' => $data);
+		$this->load->view('Trangchu/home', $data, FALSE);
+
 	}
 
 	public function post_message()

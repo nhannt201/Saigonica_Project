@@ -6,9 +6,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+ #avt{
+	 width: 50px;
+ }
+ #name_post {
+	 font-size: 11px;
+ }
+ </style>
 </head>
 <body>
-<?php include("_menu.php") ?>
+<?php require($_SERVER["DOCUMENT_ROOT"]."/application/views/include/head_menu.php") ?>
 <!--
 <header class="jumbotron text-center">
 <h2>Saigonica - Nền tảng Blog nhanh!</h2>
@@ -37,14 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   </div>
 	    </div>
 		 </div>
-</form> <style>
- #avt{
-	 width: 50px;
- }
- #name_post {
-	 font-size: 11px;
- }
- </style>
+</form> 
 <div class="panel panel-default">
 
 <!--Bat dau 1 post-->

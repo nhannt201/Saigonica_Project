@@ -10,6 +10,20 @@ class Baiviet extends CI_Model {
 	    $this->db->insert('post',$data);
 	    return $this->db->insert_id();
 	}
+	public function sua($id, $m)
+	{
+		$time = time();
+	    $data = array('noidung' => $m, 'time' => $time);
+	    $this->db->where('id', $id);
+	    $this->db->update('post', $data);
+	}
+	public function get($l)
+	{
+	    $this->db->select('*');
+	    $kq = $this->db->get('post', $l);
+	    $kq = $kq->result_array();
+	    return $kq;
+	}
 	
 
 }
