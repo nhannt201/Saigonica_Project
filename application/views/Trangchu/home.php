@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  </style>
 </head>
 <body>
-	<?php require($_SERVER["DOCUMENT_ROOT"]."/Saigonica/application/views/include/head_menu.php") ?>
+	<?php require($_SERVER["DOCUMENT_ROOT"]."/application/views/include/head_menu.php") ?>
 
 <!--
 <header class="jumbotron text-center">

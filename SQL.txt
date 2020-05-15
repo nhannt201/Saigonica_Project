@@ -1,7 +1,7 @@
 
---
--- Cấu trúc bảng cho bảng `post`
---
+-----------------------------------
+---Cấu trúc bảng cho bảng `post`---
+-----------------------------------
 
 CREATE TABLE `post` (
   `id` int(11) NOT NULL,
@@ -12,25 +12,56 @@ CREATE TABLE `post` (
   `dislikes` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Chỉ mục cho các bảng đã đổ
---
+--------------------------------
+---Chỉ mục cho các bảng đã đổ---
+--------------------------------
 
---
--- Chỉ mục cho bảng `post`
---
+----------------------------
+---Chỉ mục cho bảng `post`--
+----------------------------
 ALTER TABLE `post`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT cho các bảng đã đổ
---
+---------------------------------------
+---AUTO_INCREMENT (A_I) cho các bảng đã đổ---
+---------------------------------------
 
---
--- AUTO_INCREMENT cho bảng `post`
---
+-------------------------------------
+--AUTO_INCREMENT cho bảng `post`-----
+-------------------------------------
 ALTER TABLE `post`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 ALTER TABLE `post` ADD `time` INT NOT NULL AFTER `dislikes`;
+
+----------------------------------------------------------------------------------
+-----MY-PROFILE-------------------------------------------------------------------
+----------------------------------------------------------------------------------
+------CREATE-TABLE-SQL------------------------------------------------------------
+----------------------------------------------------------------------------------
+----PASTE-TO-SQL------------------------------------------------------------------
+----------------------------------------------------------------------------------
+---------NOTE:-IT-USE-FOR-INFORMATION-PERSONAL-AND-IFORMATION-BLOG----------------
+----------------------------------------------------------------------------------
+CREATE TABLE `profile` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `my_email` text COLLATE utf8_unicode_ci NOT NULL,
+    `my_phone` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+ 	`my_address` text COLLATE utf8_unicode_ci NOT NULL,
+	`my_fullname` text COLLATE utf8_unicode_ci NOT NULL,
+    `my_sex` int(1) NOT NULL,
+    `my_birthday` text NOT NULL,
+    `my_about` text COLLATE utf8_unicode_ci NOT NULL,
+    `my_avt` blob NOT NULL,
+    `my_password` text NOT NULL,
+    `my_notify` int NOT NULL,
+    `blog_name` text COLLATE utf8_unicode_ci NOT NULL,
+    `blog_intro` text COLLATE utf8_unicode_ci NOT NULL,
+    `blog_ispublic` int NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-----------------------------------------------------------------------
+-----END-CREATE-PROFILE------------------------------------------
+--------------------------------------------------------
