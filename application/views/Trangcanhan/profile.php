@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		  </div>
 		  </div>
 		  <div class="col-md-10">
+		  <form id="frm_profile" method="POST" action="#update_profile">
 		<!--ChooseAVT-->
 <div class="input-group">
   <span class="input-group-addon">Chọn ảnh đại diện</span>
@@ -88,7 +89,7 @@ $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Địa chỉ E-mail</span>
-  <input type="text" class="form-control" value="myemail@gmail.com" placeholder="example_mail@example.com">
+  <input type="text" class="form-control" id="my_email" value="myemail@gmail.com" placeholder="example_mail@example.com">
 </div>
 <!--Phone-->
 <br/>
@@ -112,13 +113,27 @@ $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
 <!--Save-->
 <br/>
 	    <div class="text-right">
-	 <button type="submit" class="btn btn-default">Lưu thông tin</button>
+	 <input type="submit" onclick="myProfile_update()"class="btn btn-default" value="Lưu thông tin"/>
 	   </div>
 		</div>
 	</div>
   </div>
-
 </div>
+</form>
+<script  type='text/javascript'>
+function myProfile_update() {
+document.getElementById("frm_profile").submit();
+	 document.write("Waiting for moment...");
+window.location.reload(true);
+
+ // var mail = document.getElementById("my_email");
+ // document.write(mail);
+
+}
+</script>
+<?php
+//echo $this->input->post('my_email');
+?>
 <!--ThongtinPage-->
 <div class="panel panel-default">
 
