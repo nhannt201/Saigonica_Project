@@ -34,6 +34,7 @@ ALTER TABLE `post`
 COMMIT;
 
 ALTER TABLE `post` ADD `time` INT NOT NULL AFTER `dislikes`;
+ALTER TABLE `post` ADD `time_modify` INT NOT NULL AFTER `time`;
 
 ----------------------------------------------------------------------------------
 -----MY-PROFILE-------------------------------------------------------------------
@@ -59,6 +60,8 @@ CREATE TABLE `profile` (
     `blog_name` text COLLATE utf8_unicode_ci NOT NULL,
     `blog_intro` text COLLATE utf8_unicode_ci NOT NULL,
     `blog_ispublic` int NOT NULL,
+	`time_join` int NOT NULL,
+	`time_modify` int NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

@@ -20,6 +20,7 @@ class Baiviet extends CI_Model {
 	public function get($l)
 	{
 	    $this->db->select('*');
+		$this->db->order_by('time', 'DESC'); //sap xep giam dan theo cot TIME
 	    $kq = $this->db->get('post', $l);
 	    $kq = $kq->result_array();
 	    return $kq;

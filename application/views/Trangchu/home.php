@@ -90,6 +90,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <?php
 foreach ($post as $value) {
+	$xuli_time = str_replace("=","giờ",date('H = i + - d.m.Y', $value['time']));
+	$xuli_time = str_replace("+","phút",$xuli_time);
+	//$xuli_time = str_replace("-","ngày",$xuli_time);
    ?>
    <!--Bat dau 1 post-->
 <div class="list-group-item">
@@ -108,7 +111,7 @@ foreach ($post as $value) {
 <!--Panell-->
 <div class="panel panel-default">
 
-  <div class="panel-heading">Cập nhật lúc 24h00 - 15. 5. 2020</div>
+  <div class="panel-heading">Cập nhật lúc <?php echo $xuli_time; ?></div>
 
   <div class="panel-body">
 
