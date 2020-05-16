@@ -50,24 +50,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		  </div>
 		  </div>
 		  <div class="col-md-10">
-		  <form id="frm_profile" method="POST" action="#update_profile">
+		  <form id="frm_profile" method="POST" action="/profile/update_profile">
 		<!--ChooseAVT-->
 <div class="input-group">
   <span class="input-group-addon">Chọn ảnh đại diện</span>
-  <input type="file" class="form-control">
+  <input type="file" id="my_avt"  name="my_avt" class="form-control">
 </div>
 	<!--endchose-->
 	<br/>
 	<!--InforPrivate-->
 <div class="input-group">
   <span class="input-group-addon">Họ và tên (Nickname)</span>
-  <input type="text" class="form-control" value="Sơn Tùng MTP" placeholder="Trần Văn B">
+  <input type="text" class="form-control" id="my_fullname" name="my_fullname" value="Sơn Tùng MTP" placeholder="Trần Văn B">
 </div>
 <!--Sex-->
   <br/>
 <div class="form-group">
-  <label for="sel1">Giới tính:</label>
-  <select class="form-control" id="sel1">
+  <label for="my_sex">Giới tính:</label>
+  <select class="form-control" id="my_sex" name="my_sex">
     <option>Nam</option>
     <option>Nữ</option>
   </select>
@@ -76,44 +76,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
            <label for="sel1">Sinh nhật:</label>
           <!-- Datepicker as text field -->         
           <div class="input-group date" data-date-format="dd.mm.yyyy">
-            <input  type="text" class="form-control" placeholder="dd.mm.yyyy">
+            <input  type="text" id="my_birthday" name="my_birthday" class="form-control" placeholder="dd.mm.yyyy">
             <div class="input-group-addon" >
               <span class="glyphicon glyphicon-th"></span>
             </div>
           </div>
 <script id="rendered-js">
 $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
-//# sourceURL=pen.js
     </script>
 <!--Mail-->
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Địa chỉ E-mail</span>
-  <input type="text" class="form-control" id="my_email" value="myemail@gmail.com" placeholder="example_mail@example.com">
+  <input type="text" class="form-control" id="my_email" name="my_email" value="myemail@gmail.com" placeholder="example_mail@example.com">
 </div>
 <!--Phone-->
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Số điện thoại (+84)</span>
-  <input type="text" class="form-control" value="0123456789" placeholder="0893346785">
+  <input type="text" class="form-control" id="my_phone" name="my_phone" value="0123456789" placeholder="0893346785">
 </div>
 
 	<!--MyHouse-->
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Địa chỉ</span>
-  <input type="text" class="form-control" value="Ba Đình, Hà Nội" placeholder="Hà Nội">
+  <input type="text" class="form-control" id="my_address" name="my_address" value="Ba Đình, Hà Nội" placeholder="Hà Nội">
 </div>
       <!--Intro_me-->
 <br/>
  <label>Về bản thân tôi:</label>
    <div class="form-group">
-    <textarea class="form-control" rows="3">Sky ơi, say oh yeah...!</textarea>
+    <textarea class="form-control" id="my_about" name="my_about" rows="3">Sky ơi, say oh yeah...!</textarea>
   </div>
 <!--Save-->
 <br/>
 	    <div class="text-right">
-	 <input type="submit" onclick="myProfile_update()"class="btn btn-default" value="Lưu thông tin"/>
+	 <input type="submit" class="btn btn-default" value="Lưu thông tin"/>
 	   </div>
 		</div>
 	</div>
@@ -121,18 +120,19 @@ $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
 </div>
 </form>
 <script  type='text/javascript'>
+//onclick="myProfile_update()"
 function myProfile_update() {
 document.getElementById("frm_profile").submit();
 	 document.write("Waiting for moment...");
 window.location.reload(true);
-
- // var mail = document.getElementById("my_email");
- // document.write(mail);
-
 }
 </script>
-<?php
-//echo $this->input->post('my_email');
+
+<?php 
+//if(isset($my_email) && isset($my_fullname)){
+//echo "<label class='label_output'>Entered User Name : </label>".$my_fullname;
+//echo "<label class='label_output'>Entered Email: </label>".$my_email;
+//} 
 ?>
 <!--ThongtinPage-->
 <div class="panel panel-default">

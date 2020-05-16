@@ -19,8 +19,9 @@ class home extends CI_Controller {
 	    $this->load->model('Baiviet/baiviet');
 	    
 	    if($this->baiviet->them('1',$noidung)){
-	    	$noti = 'success';
-	    
+	    	//$noti = 'success';
+	    header('Location: http://'.$_SERVER['HTTP_HOST']);
+			exit;	
 	    }else{
 	    	$noti = 'error';
 	    }
