@@ -19,12 +19,12 @@ class profile extends CI_Controller {
 		$this->load->model('Caidat/st_profile');
 		//$this->model_name->method();
 		//Call method model
-		 if($this->st_profile->dangky($us_fullname,$us_email, $us_password)){
-	    	header('Location: http://'.$_SERVER['HTTP_HOST'].'/profile');
-			exit;	    
-	    }else{
-	    	$noti = 'error';
-	    }
+		// if($this->st_profile->capnhat($us_fullname,$us_email, $us_password)){
+	   // 	header('Location: http://'.$_SERVER['HTTP_HOST'].'/profile');
+		//	exit;	    
+	 //   }else{
+	  //  	$noti = 'error';
+	  //  }
 	   // echo $noti;
 
 	}

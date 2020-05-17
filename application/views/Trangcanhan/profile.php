@@ -88,13 +88,13 @@ $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Địa chỉ E-mail</span>
-  <input type="text" class="form-control" id="my_email" name="my_email" value="myemail@gmail.com" placeholder="example_mail@example.com">
+  <input type="email" class="form-control" id="my_email" name="my_email" value="myemail@gmail.com" placeholder="example_mail@example.com">
 </div>
 <!--Phone-->
 <br/>
 <div class="input-group">
   <span class="input-group-addon">Số điện thoại (+84)</span>
-  <input type="text" class="form-control" id="my_phone" name="my_phone" value="0123456789" placeholder="0893346785">
+  <input type="number" class="form-control" id="my_phone" name="my_phone" value="0123456789" placeholder="0893346785">
 </div>
 
 	<!--MyHouse-->
@@ -119,15 +119,6 @@ $('.input-group.date').datepicker({ format: "dd.mm.yyyy" });
   </div>
 </div>
 </form>
-<script  type='text/javascript'>
-//onclick="myProfile_update()"
-function myProfile_update() {
-document.getElementById("frm_profile").submit();
-	 document.write("Waiting for moment...");
-window.location.reload(true);
-}
-</script>
-
 <?php 
 //if(isset($my_email) && isset($my_fullname)){
 //echo "<label class='label_output'>Entered User Name : </label>".$my_fullname;

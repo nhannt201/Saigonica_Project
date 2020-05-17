@@ -73,8 +73,16 @@
       </form>
 
       <ul class="nav navbar-nav navbar-right">
+<?php
 
-        <li><a href="profile">Xin chao : Lee Nann Anh</a></li>
+if (isset($_SESSION['my_us'])) {
+	$myfullname = "Hello, <a href='/profile'>".$this->session->has_userdata('my_us')."</a>";
+} else
+{
+	$myfullname= "<a href='/dangnhap'>Dang nhap</a>";
+}
+?>
+        <li><?php echo $myfullname; ?></li>
 
         <li class="dropdown">
 
